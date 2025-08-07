@@ -195,7 +195,7 @@ async function onImageUpload() {
 
 // লেবেল্ড ইমেজ লোডার ফাংশন
 async function loadLabeledImages() {
-  const labels = ['Tonik', 'Cristiano Rolando']; // তোমার লেবেল্ড ফোল্ডারের নামগুলো
+  const labels = ['Tonik', 'Cristiano Rolando', 'Mohsin']; // তোমার লেবেল্ড ফোল্ডারের নামগুলো
   return Promise.all(
     labels.map(async label => {
       const descriptions = [];

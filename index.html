@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Gender Detection</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Face detected own trained model</title>
 </head>
 <body>
+  <h1>📸 Upload Photo for Face detected by own trained model</h1>
+  <input type="file" id="imageUpload" accept="image/*" />
+  <br><br>
+  <div id="imageContainer"></div>
+  <h2 id="status">⏳ Waiting for image...</h2>
 
-  <div class="container">
-    <h1>Gender Detection</h1>
-    <input type="file" id="imageUpload" accept="image/*" />
-    <div class="image-area">
-      <img id="uploadedImage" />
-      <canvas id="overlay"></canvas>
-    </div>
-  </div>
-
-  <!-- Local JS scripts -->
-  <script src="face-api.min.js"></script>
-  <script src="script.js"></script>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
 </body>
 </html>
